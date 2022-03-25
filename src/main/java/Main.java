@@ -7,7 +7,6 @@ import java.util.logging.Logger;
 public class Main {
     private static final long start = System.currentTimeMillis();
     public static void main(String[] args) {
-
         String source = "src/main/resources/source";
         String destination = "src/main/resources/destination";
 
