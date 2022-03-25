@@ -6,13 +6,12 @@ import java.util.logging.Logger;
 
 public class Main {
     private static final long start = System.currentTimeMillis();
-
     public static void main(String[] args) {
 
         String source = "src/main/resources/source";
         String destination = "src/main/resources/destination";
 
-        resizeImages(source,destination,3); //pathToSourceFolder, destinationPath, countOfThreads
+        resizeImages(source, destination, Runtime.getRuntime().availableProcessors()); //pathToSourceFolder, destinationPath, countOfThreads
 
     }
     private static void resizeImages(String sourcePath, String destinationPath, int threads) {
