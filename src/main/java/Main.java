@@ -15,7 +15,6 @@ public class Main {
     }
     private static void resizeImages(String sourcePath, String destinationPath, int threads) {
         Logger LOGGER = Logger.getLogger(String.valueOf(Main.class));
-
         File imagesDirectory = new File(sourcePath);
         File[] images = imagesDirectory.listFiles();
 
@@ -51,7 +50,6 @@ public class Main {
                 ImageResizer resizer = new ImageResizer(arrays, 1400, destinationPath, start); //new width 1400
                 new Thread(resizer).start();
                 LOGGER.log(Level.INFO,"thread #"+ threadNum + " 'resizer' is starting ...");
-
             }
         } catch (ArrayIndexOutOfBoundsException e) {
             e.printStackTrace();
