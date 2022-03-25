@@ -44,7 +44,6 @@ public class ImageResizer implements Runnable {
                 e.printStackTrace();
             }
         }
-        LOGGER.log(Level.INFO,
-                "thread stopped, images has been resizing successfully, time: " + (System.currentTimeMillis() - start) + " ms");
+        LOGGER.log(Level.INFO, "thread stopped, images has been resizing successfully, time: " + (System.currentTimeMillis() - start) + " ms");
     }
 }
