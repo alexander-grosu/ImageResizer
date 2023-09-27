@@ -1,2 +1,2 @@
 # ImageResizer
-Java,  imageIO, Scalr, I/O, Multithreding
+Java,  imageIO, imgScalr, I/O, Multithreding
